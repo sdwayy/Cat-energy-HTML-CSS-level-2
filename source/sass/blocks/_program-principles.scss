@@ -1,0 +1,15 @@
+.program-principles {
+  padding: 0 30px 45px 20px;
+}
+
+.program-principles__title {
+  margin-top: 0;
+}
+
+.program-principles__list {
+  @include list;
+}
+
+.program-principles__item {
+  padding-left: 80px;
+}

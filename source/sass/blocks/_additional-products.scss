@@ -1,0 +1,7 @@
+.additional-products {
+  padding: 30px 20px 0 20px;
+}
+
+.additional-products__list {
+  @include list;
+}

@@ -1,0 +1,23 @@
+.programs__list {
+  @include list;
+}
+
+.programs__item {
+  padding: 46px 70px 25px 25px;
+
+  background-color: $second-bg-color;
+  margin-bottom: 20px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.programs__title {
+  margin: 0;
+  padding-left: 70px;
+}
+
+.programs__link {
+  @include link;
+}

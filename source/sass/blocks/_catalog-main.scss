@@ -1,0 +1,25 @@
+.catalog-main__page-title {
+  padding: 0 20px 0 20px;
+  margin-top: 0;
+}
+
+.catalog-main__additional-products {
+  margin-bottom: 40px;
+}
+
+.catalog-main__gift {
+  box-sizing: border-box;
+  min-height: 289px;
+  margin: 0 20px 36px 20px;
+  padding: 190px 55px 20px 55px;
+
+  text-align: center;
+  color: $second-font-color;
+
+  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.catalog-main__contacts {
+  background-color: $second-bg-color;
+}
