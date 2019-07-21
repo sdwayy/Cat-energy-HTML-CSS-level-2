@@ -1,10 +1,10 @@
 @import "./abstracts/variables";
 @import "./abstracts/mixins";
-@import "./abstracts/other";
 @import "./base/normalize";
 @import "./base/visually-hidden";
-@import "./abstracts/tipography";
-@import "./blocks/btn";
+@import "./base/global.scss";
+@import "./blocks/btn.scss";
+@import "./blocks/body-wrapper.scss";
 @import "./blocks/page-header";
 @import "./blocks/intro";
 @import "./blocks/programs";

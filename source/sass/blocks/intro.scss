@@ -2,6 +2,12 @@
   color: $second-font-color;
 }
 
+.intro__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+}
+
 .intro__slogan-box {
   box-sizing: border-box;
   min-height: 305px;
@@ -14,11 +20,15 @@
   background-repeat: no-repeat;
 }
 
+.intro__slogan {
+  font-size: 14px;
+  line-height: 14px;
+}
+
 .intro__promo {
   min-height: 175px;
 }
 
 .intro__promo-img {
-  @include img;
   margin-top: -130px;
 }
