@@ -1,0 +1,47 @@
+.life-example {
+  padding: 0 20px 40px 20px;
+
+  background-color: $second-bg-color;
+}
+
+.life-example__title {
+  margin-top: 0;
+
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: normal;
+}
+
+.life-example__description {
+  font-family: $second-font;
+
+  padding-right: 10px;
+}
+
+.life-example__results-list {
+  @include list;
+}
+
+.life-example__result-title {
+  font-family: $second-font;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.life-example__result-value {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.life-example__nutrition-cost {
+  line-height: 20px;
+  text-align: center;
+}
+
+.life-example__controls-title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+}

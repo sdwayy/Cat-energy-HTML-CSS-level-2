@@ -1,0 +1,35 @@
+.programs__item {
+  padding: 46px 70px 25px 25px;
+
+  background-color: $second-bg-color;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.programs__list {
+  @include list;
+}
+
+.programs__title {
+  margin: 0;
+  padding-left: 70px;
+
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.programs__description {
+  font-family: $second-font;
+}
+
+.programs__link {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  @include link;
+}

@@ -3,57 +3,69 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   </head>
-  <body>
-    <header class="page-header">
-      <a class="page-header__logo logo" href="#">
-        <img class="logo__img" src="#" alt="Логотип" width="" height="">
-      </a>
-      <span class="page-header__site-title site-title">Cat Energy</span>
-      <nav class="page-header__main-nav main-nav">
-        <div class="main-nav__burger-btn burger-btn">
-          <span class="visually-hidden">Открыть меню</span>
-          <div class="burger-btn__burger-icon"></div>
-        </div>
-        <ul class="page-header__main-nav main-nav visually-hidden">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Главная</a>
+  <body class="form-body">
+    <div class="wrapper">
+      <header class="page-header">
+        <a class="page-header__site-logo header-logo" href="./index.html">
+          <img class="header-logo__img" src="./img/logo-mobile.svg" alt="Наш логотип" width="195" height="40">
+        </a>
+        <nav class="page-header__main-nav main-nav">
+          <div class="main-nav__burger-btn burger-btn">
+            <span class="visually-hidden">Открыть меню</span>
+            <div class="burger-btn__burger-icon"></div>
+          </div>
+          <ul class="page-header__main-nav main-nav visually-hidden">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link" href="#">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="form-main">
+        <section class="form-main__contacts--second-color contacts">
+          <h3 class="visually-hidden">Наш адрес</h3>
+          <div class="contacts__address-box">
+            <p class="contacts__cooperation">Приглашаем к сотрудничеству дилеров</p>
+            <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          </div>
+          <img class="contacts__map" src="./img/bg-map-mobile@1x.png" alt="Маршрут проезда" width="320" height="362">
+        </section>
+      </main>
+      <footer class="index-footer page-footer">
+        <a class="page-footer__logo footer-logo" href="index.html">
+          <img class="footer-logo__img" src="./img/logo-footer.svg" alt="Наш логотип" width="128" height="24">
+        </a>
+        <ul class="page-footer__social-list social-list">
+          <li class="social-list__item">
+            <a class="social-list__link link-vk" href="#">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Каталог продукции</a>
+          <li class="social-list__item">
+            <a class="social-list__link link-instagram" href="#">
+              <span class="visually-hidden">Instagram</span>
+            </a>
           </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link" href="#">Подбор программы</a>
+          <li class="social-list__item">
+            <a class="social-list__link link-facebook" href="#">
+              <span class="visually-hidden">Facebook</span>
+            </a>
           </li>
         </ul>
-      </nav>
-    </header>
-    <main class="form-main">
-
-    </main>
-    <footer class="form-page-footer page-footer">
-      <a class="page-footer__site-title site-title" href="index.html">Cat Energy</a>
-      <ul class="page-footer__social-list social-list">
-        <li class="social-list__item">
-          <a class="social-list__link" href="#">
-            <span class="visually-hidden">Вконтакте</span>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#">
-            <span class="visually-hidden">Instagram</span>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#">
-            <span class="visually-hidden">Facebook</span>
-          </a>
-        </li>
-      </ul>
-      <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive" title="Перейти на сайт академии">
-        <span class="copyright__title">HTML Academy</span>
-        <img  class="copyright__img" src="" alt="HTML Academy logo">
-      </a>
-    </footer>
+        <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive" title="Перейти на сайт академии">
+          <span class="copyright__title">HTML Academy</span>
+          <img class="copyright__img" src="./img/htmlacademy.svg" alt="Логотип академии" width="27" height="34">
+        </a>
+      </footer>
+    </div>
   </body>
 </html>

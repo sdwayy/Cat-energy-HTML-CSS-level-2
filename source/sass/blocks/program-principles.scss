@@ -1,0 +1,21 @@
+.program-principles {
+  padding: 0 30px 45px 20px;
+}
+
+.program-principles__title {
+  margin-top: 0;
+
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: normal;
+}
+
+.program-principles__list {
+  @include list;
+}
+
+.program-principles__item {
+  padding-left: 80px;
+
+  font-family: $second-font;
+}

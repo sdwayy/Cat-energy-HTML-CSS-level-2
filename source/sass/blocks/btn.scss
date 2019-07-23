@@ -1,0 +1,18 @@
+.btn {
+  display: block;
+
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: $second-font-color;
+  background-color: $bg-color;
+
+  &--second-style {
+    color: $main-font-color;
+
+    background-color: $second-bg-color;
+  }
+}
