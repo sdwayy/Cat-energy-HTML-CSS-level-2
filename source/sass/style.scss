@@ -2,10 +2,11 @@
 @import "./abstracts/mixins";
 @import "./base/normalize";
 @import "./base/visually-hidden";
-@import "./base/global.scss";
-@import "./blocks/btn.scss";
-@import "./blocks/body-wrapper.scss";
+@import "./base/global";
+@import "./blocks/btn";
+@import "./blocks/wrapper";
 @import "./blocks/page-header";
+@import "./blocks/main-nav";
 @import "./blocks/intro";
 @import "./blocks/programs";
 @import "./blocks/program-principles";

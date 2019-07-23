@@ -18,6 +18,10 @@
   padding-right: 10px;
 }
 
+.life-example__results-list {
+  @include list;
+}
+
 .life-example__result-title {
   font-family: $second-font;
   font-size: 12px;

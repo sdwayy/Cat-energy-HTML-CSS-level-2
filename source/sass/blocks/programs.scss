@@ -2,11 +2,14 @@
   padding: 46px 70px 25px 25px;
 
   background-color: $second-bg-color;
-  margin-bottom: 20px;
 
   &:last-of-type {
     margin-bottom: 0;
   }
+}
+
+.programs__list {
+  @include list;
 }
 
 .programs__title {
@@ -27,4 +30,6 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+
+  @include link;
 }

@@ -1,19 +1,21 @@
-body {
-  font-family: ("Oswald", "Arial", sans-serif);
+html {
+  box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-  color: $main-font-color;
+* {
+  box-sizing: inherit;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}
+
+body {
+  font-family: ("Oswald", "Arial", sans-serif);
 }
 
 img {
   max-width: 100%;
   height: auto;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 }

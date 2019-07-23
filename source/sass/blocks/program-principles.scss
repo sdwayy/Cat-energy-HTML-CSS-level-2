@@ -10,6 +10,10 @@
   font-weight: normal;
 }
 
+.program-principles__list {
+  @include list;
+}
+
 .program-principles__item {
   padding-left: 80px;
 
