@@ -1,16 +1,27 @@
-.popular-catalog {
-  padding: 0 20px 0 20px;
-}
-
 .popular-catalog__list {
   @include list;
 }
 
 .popular-catalog__item {
+  display: flex;
+  flex-wrap: wrap;
   padding: 32px 0 25px 0;
+
+  &--show-more {
+    display: block;
+
+    position: relative;
+
+    padding-top: 80px;
+    padding-bottom: 26px;
+
+    text-align: center;
+  }
 }
 
 .popular-catalog__item-name {
+  width: 75px;
+
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
@@ -20,23 +31,118 @@
 }
 
 .popular-catalog__item-description {
+  width: 140px;
+
   font-family: $second-font;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .popular-catalog__more-tastes {
   font-family: $second-font;
+  font-size: 12px;
+  line-height: 16px;
 }
 
-.popular-catalog__show-more {
-  padding-top: 80px;
-  padding-bottom: 26px;
-
-  text-align: center;
+.popular-catalog__btn {
+  width: 100%;
 }
 
 .popular-catalog__more-populars {
+  @include link;
+
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 27px;
+    left: 50%;
+
+    width: 30px;
+    height: 30px;
+    margin-left: -15px;
+
+    background-image: url("./../img/icon-plus-mobile.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.popular-catalog__description-value {
+  text-align: right;
+}
+
+@media (min-width: $tablet-width) {
+  .popular-catalog__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .popular-catalog__item-box {
+    width: 100%;
+  }
+
+  .popular-catalog__item {
+    position: relative;
+
+    width: 324px;
+
+    margin-bottom: 145px;
+    padding: 171px 40px 42px 38px;
+
+    background-color: $second-bg-color;
+
+    &:nth-last-child(1) {
+      margin-bottom: 0;
+
+      background-color: #ffffff;
+      border: 1px solid #e6e6e6;
+    }
+
+    &:nth-last-child(2) {
+      margin-bottom: 0;
+    }
+  }
+
+  .popular-catalog__item-img {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+
+    margin-left: -70px;
+  }
+
+  .popular-catalog__item-name {
+    position: relative;
+    left: 50%;
+
+    width: 135px;
+    margin-left: -67.5px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .popular-catalog__item-description {
+    width: 100%;
+
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .popular-catalog__item {
+    width: 245px;
+
+    &:nth-last-child(3),
+    &:nth-last-child(4) {
+      margin-bottom: 0;
+    }
+  }
 }
