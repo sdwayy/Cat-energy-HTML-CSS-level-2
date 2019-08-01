@@ -164,23 +164,6 @@
     position: relative;
 
     padding-bottom: 40px;
-
-    background-color: $second-bg-color;
-
-    .wrapper::after {
-      content: "";
-
-      position: absolute;
-      top: 0;
-      right: 0;
-
-      width: 50%;
-      height: 100%;
-
-      background-color: #eaeaea;
-
-      z-index: 1;
-    }
   }
 
   .life-example__controls-box {
@@ -197,38 +180,27 @@
 }
 
 @media (min-width: $desktop-width) {
-  .life-example__title {
-    .wrapper {
-      width: auto;
-      margin: 0;
-    }
-  }
-
   .life-example__content-box {
-    display: flex;
-    justify-content: space-between;
-
     background-color: $second-bg-color;
+
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   .life-example__story-box {
-    width: 610px;
-    margin: 0;
-    padding-right: 0;
+    width: 50%;
 
     background-color: $second-bg-color;
-  }
-
-  .life-example__slider {
-    .wrapper {
-      width: 650px;
-      margin: 0;
-      padding-left: 0;
-    }
   }
 
   .life-example__result-title {
     background-color: $second-bg-color;
+  }
+
+  .life-example__description {
+    width: 410px;
   }
 
   .life-example__result-wrapper {
@@ -242,7 +214,10 @@
 
   .life-example__nutrition-cost {
     width: auto;
-
     text-align: left;
+  }
+
+  .life-example__slider {
+    width: 50%;
   }
 }

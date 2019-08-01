@@ -34,6 +34,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
   .page-header__wrapper {
     flex-direction: row;
     justify-content: space-between;
@@ -47,5 +52,7 @@
 @media (min-width: $desktop-width) {
   .page-header {
     padding-top: 54px;
+
+    font-size: 20px;
   }
 }

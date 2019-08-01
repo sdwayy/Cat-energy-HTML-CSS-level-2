@@ -1,7 +1,7 @@
 .catalog-main__page-title {
   margin: 0;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 
   font-size: 36px;
   line-height: 60px;
@@ -21,6 +21,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .catalog-main__page-title {
+    margin-top: 66px;
+    margin-bottom: 150px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
   .catalog-main__title-wrapper {
     border: none;
   }

@@ -4,6 +4,19 @@
 
 .additional-products__list {
   @include list;
+
+  margin-bottom: 40px;
+}
+
+.additional-products__item {
+  padding-top: 14px;
+  padding-bottom: 18px;
+
+  border-top: 1px solid #ededed;
+
+  &:last-of-type {
+    border-bottom: 1px solid #ededed;
+  }
 }
 
 .additional-products__title {
@@ -13,6 +26,9 @@
 }
 
 .additional-products__product-name {
+  margin-top: 0;
+  margin-bottom: 14px;
+
   font-size: 16px;
   line-height: 16px;
   font-weight: normal;
@@ -20,6 +36,8 @@
 }
 
 .additional-products__price-box {
+  margin-bottom: 14px;
+
   font-family: $second-font;
   font-size: 14px;
   line-height: 14px;
@@ -29,6 +47,8 @@
   position: relative;
 
   min-height: 289px;
+  margin-top: 0;
+  margin-bottom: 40px;
   padding: 190px 55px 20px 55px;
 
   font-family: $second-font;
@@ -58,14 +78,22 @@
 }
 
 @media (min-width: $tablet-width) {
-  .additional-products__item {
-    padding: 20px 38px 28px 38px;
-
-    border: 1px solid #e6e6e6;
+  .additional-products__title {
+    font-size: 36px;
+    line-height: 36px;
   }
 
   .additional-products__product-name {
     margin: 0;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .additional-products__item {
+    padding: 20px 38px 28px 38px;
+
+    border: 1px solid #e6e6e6;
   }
 
   .additional-products__product-box {
@@ -74,6 +102,11 @@
 
     padding-right: 40px;
     padding-bottom: 20px;
+  }
+
+  .additional-products__price-box {
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .additional-products__gift {

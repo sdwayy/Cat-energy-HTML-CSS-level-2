@@ -28,7 +28,7 @@
 
 .contacts__map {
   display: block;
-  width: 100%;
+  max-width: 100%;
 }
 
 @media (min-width: $tablet-width) {

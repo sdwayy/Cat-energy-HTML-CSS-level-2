@@ -5,7 +5,9 @@
 .popular-catalog__item {
   display: flex;
   flex-wrap: wrap;
-  padding: 32px 0 25px 0;
+  padding: 32px 20px 25px 20px;
+
+  border-bottom: 1px solid #ededed;
 
   &--show-more {
     display: block;
@@ -26,7 +28,9 @@
   line-height: 20px;
   font-weight: normal;
   text-transform: uppercase;
+}
 
+.popular-catalog__item-link {
   @include link;
 }
 
@@ -79,8 +83,13 @@
 @media (min-width: $tablet-width) {
   .popular-catalog__list {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+
+
+    width: $tablet-width;
+    margin: 0 auto;
+    padding-right: $tablet-padding;
+    padding-left: $tablet-padding;
   }
 
   .popular-catalog__item-box {
@@ -90,22 +99,30 @@
   .popular-catalog__item {
     position: relative;
 
-    width: 324px;
+    align-self: flex-start;
 
-    margin-bottom: 145px;
+    width: 324px;
+    min-height: 431px;
+    margin-right: 60px;
+    margin-bottom: 140px;
     padding: 171px 40px 42px 38px;
 
     background-color: $second-bg-color;
 
-    &:nth-last-child(1) {
-      margin-bottom: 0;
-
-      background-color: #ffffff;
-      border: 1px solid #e6e6e6;
+    &:nth-of-type(2n) {
+      margin-right: 0;
     }
 
     &:nth-last-child(2) {
       margin-bottom: 0;
+    }
+
+    &:nth-last-child(1) {
+      margin-bottom: 0;
+      padding: 160px 38px 40px 38px;
+
+      background-color: #ffffff;
+      border: 1px solid #e6e6e6;
     }
   }
 
@@ -123,6 +140,8 @@
 
     width: 135px;
     margin-left: -67.5px;
+    margin-bottom: 16px;
+
     font-size: 20px;
     line-height: 20px;
     text-align: center;
@@ -133,16 +152,44 @@
 
     font-size: 16px;
     line-height: 16px;
+
+    td {
+      border-bottom: 1px solid #cdcdcd;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .popular-catalog__list {
+    width: $desktop-width;
+    padding-right: $desktop-padding;
+    padding-left: $desktop-padding;
+  }
+
   .popular-catalog__item {
     width: 245px;
+    margin-right: 80px;
 
+    &:nth-of-type(2n) {
+      margin-right: 80px;
+    }
+
+    &:nth-of-type(4n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(2),
     &:nth-last-child(3),
     &:nth-last-child(4) {
       margin-bottom: 0;
+    }
+
+    &:nth-last-child(1) {
+      margin-bottom: 0;
+      padding: 160px 38px 40px 38px;
+
+      background-color: #ffffff;
+      border: 1px solid #e6e6e6;
     }
   }
 }
