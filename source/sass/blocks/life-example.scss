@@ -1,5 +1,6 @@
 .life-example {
-  padding: 0 20px 40px 20px;
+  padding-top: 20px;
+  padding-bottom: 40px;
 
   background-color: $second-bg-color;
 }
@@ -15,14 +16,56 @@
 .life-example__description {
   font-family: $second-font;
 
+  font-size: 14px;
+  line-height: 18px;
+
   padding-right: 10px;
+}
+
+.life-example__img-box {
+  position: relative;
+
+  min-height: 240px;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
+  }
 }
 
 .life-example__results-list {
   @include list;
+
+  display: flex;
+
+  margin-bottom: 35px;
+
+  justify-content: space-between;
+}
+
+.life-example__results-box {
+  position: relative;
+
+  width: 124px;
+  padding: 15px 0;
+
+  text-align: center;
+
+  border: 1px solid #cdcdcd;
 }
 
 .life-example__result-title {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+
+  width: 86px;
+  margin-left: -43px;
+  padding: 1px 12px;
+  background-color: $second-bg-color;
   font-family: $second-font;
   font-size: 12px;
   line-height: 12px;
@@ -37,6 +80,12 @@
 .life-example__nutrition-cost {
   line-height: 20px;
   text-align: center;
+  text-transform: uppercase;
+}
+
+.life-example__controls-box {
+  display: flex;
+  justify-content: space-around;
 }
 
 .life-example__controls-title {
@@ -44,4 +93,131 @@
   line-height: 20px;
   font-weight: normal;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .life-example {
+    padding-bottom: 0;
+
+    background-color: #ffffff;
+  }
+
+  .life-example__title {
+    font-size: 60px;
+    line-height: 60px;
+
+    background-color: #ffffff;
+  }
+
+  .life-example__description {
+    margin-bottom: 50px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .life-example__img-box {
+    z-index: 2;
+
+    img {
+      top: -100px;
+    }
+  }
+
+  .life-example__results-box {
+    width: 156px;
+    margin-right: 42px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .life-example__result-value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .life-example__result-title {
+    font-size: 14px;
+    line-height: 14px;
+
+    background-color: #ffffff;
+  }
+
+  .life-example__nutrition-cost {
+    width: 190px;
+
+    font-size: 20px;
+    text-align: right;
+  }
+
+  .life-example__result-wrapper {
+    display: flex;
+
+    padding-bottom: 250px;
+
+    justify-content: space-between;
+  }
+
+  .life-example__slider {
+    position: relative;
+
+    padding-bottom: 40px;
+  }
+
+  .life-example__controls-box {
+    position: relative;
+
+    display: flex;
+
+    z-index: 2;
+  }
+
+  .life-example__controls-title {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .life-example__content-box {
+    background-color: $second-bg-color;
+
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .life-example__story-box {
+    width: 50%;
+
+    background-color: $second-bg-color;
+  }
+
+  .life-example__result-title {
+    background-color: $second-bg-color;
+  }
+
+  .life-example__description {
+    width: 410px;
+  }
+
+  .life-example__result-wrapper {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+
+  .life-example__results-list {
+    justify-content: left;
+  }
+
+  .life-example__nutrition-cost {
+    width: auto;
+    text-align: left;
+  }
+
+  .life-example__slider {
+    width: 50%;
+  }
 }

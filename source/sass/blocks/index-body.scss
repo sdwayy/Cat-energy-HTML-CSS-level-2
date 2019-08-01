@@ -1,0 +1,28 @@
+@media (min-width: $desktop-width) {
+  .index-body__page-header {
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      width: 50%;
+      height: 696px;
+
+      background-color: $bg-color;
+      background-image: url("./../img/index-background-desktop@1x.jpg");
+      background-size: cover;
+
+      z-index: 1;
+    }
+  }
+
+  .index-body__header-link {
+    position: relative;
+
+    color: $second-font-color;
+
+    z-index: 3;
+  }
+}

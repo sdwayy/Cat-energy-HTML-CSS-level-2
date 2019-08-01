@@ -1,7 +1,19 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .copyright__title {
   font-family: $second-font;
   font-size: 16px;
   line-height: 16px;
 
   @include link;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__title {
+    margin-right: 25px;
+  }
 }

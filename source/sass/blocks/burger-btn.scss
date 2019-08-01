@@ -1,0 +1,33 @@
+.burger-btn {
+  position: relative;
+
+  width: 24px;
+  height: 18px;
+
+  background-color: #ffffff;
+  border: none;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+
+    width: 24px;
+    height: 2px;
+
+    background-color: #000000;
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+
+    box-shadow: 0 8px 0 0 #000000;
+  }
+
+  &::after {
+    bottom: 0;
+    left: 0;
+  }
+}

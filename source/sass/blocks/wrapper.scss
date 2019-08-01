@@ -1,4 +1,26 @@
 .wrapper {
+  display: block;
+
+  width: auto;
   margin: 0 auto;
-  width: 320px;
+  padding: 0 $mobile-padding;
+}
+
+@media (min-width: $mobile-width) {
+  .wrapper {
+    padding: 0 $mobile-padding;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .wrapper {
+    padding: 0 $tablet-padding;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrapper {
+    width: $desktop-width;
+    padding: 0 $desktop-padding;
+  }
 }

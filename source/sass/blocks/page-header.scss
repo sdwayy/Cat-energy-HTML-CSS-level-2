@@ -1,7 +1,58 @@
 .page-header {
-  min-height: 66px;
-  padding: 11px 20px 16px 20px;
+  position: relative;
 
+  padding-top: 10px;
   font-size: 20px;
   line-height: 20px;
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__nav--no-js {
+  .page-header__burger-btn {
+    display: none;
+  }
+}
+
+.page-header__site-logo {
+  padding-bottom: 15px;
+}
+
+.page-header__main-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.page-header__burger-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .page-header__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .page-header__main-nav {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    padding-top: 54px;
+
+    font-size: 20px;
+  }
 }

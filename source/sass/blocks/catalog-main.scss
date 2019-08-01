@@ -1,29 +1,39 @@
 .catalog-main__page-title {
-  margin-top: 0;
-  padding: 0 20px;
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 25px;
 
   font-size: 36px;
   line-height: 60px;
   font-weight: normal;
 }
 
-.catalog-main__gift {
-  box-sizing: border-box;
-  min-height: 289px;
-  margin: 0 20px 0 20px;
-  padding: 190px 55px 20px 55px;
+.catalog-main__title-wrapper {
+  border-top: 1px solid #d9d9d9;
+}
 
-  font-family: $second-font;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: $second-font-color;
-
-  background-color: $bg-color;
-  background-image: url("./../img/gift-photo-mobile@1x.jpg");
-  background-repeat: no-repeat;
+.catalog-main__popular-catalog {
+  border-top: 1px solid #d9d9d9;
 }
 
 .catalog-main__contacts {
   background-color: $second-bg-color;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-main__page-title {
+    margin-top: 66px;
+    margin-bottom: 150px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .catalog-main__title-wrapper {
+    border: none;
+  }
+
+  .catalog-main__popular-catalog {
+    border: none;
+  }
 }

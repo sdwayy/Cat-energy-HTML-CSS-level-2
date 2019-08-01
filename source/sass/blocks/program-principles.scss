@@ -1,7 +1,3 @@
-.program-principles {
-  padding: 0 30px 45px 20px;
-}
-
 .program-principles__title {
   margin-top: 0;
 
@@ -15,7 +11,129 @@
 }
 
 .program-principles__item {
+  position: relative;
+
+  margin-bottom: 30px;
   padding-left: 80px;
 
   font-family: $second-font;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -2px;
+    left: 0;
+
+    width: 60px;
+    height: 60px;
+    background-color: $bg-color;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--useful::before {
+    background-image: url("./../img/advantage-leaf@1x.png");
+  }
+
+  &--simply::before {
+    background-image: url("./../img/advantage-powder@1x.png");
+  }
+
+  &--nutritionally::before {
+    background-image: url("./../img/advantage-dining@1x.png");
+  }
+
+  &--effectively::before {
+    background-image: url("./../img/advantage-clock@1x.png");
+  }
+}
+
+.program-principles__description {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .program-principles__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .program-principles__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .program-principles__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .program-principles__item {
+    width: 245px;
+    margin-right: 100px;
+    margin-bottom: 90px;
+    padding-top: 110px;
+    padding-left: 0;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: -30px;
+      right: 0;
+
+      font-size: 281px;
+      line-height: 281px;
+      color: #f2f2f2;
+
+      z-index: -2;
+    }
+
+    &:first-of-type::after {
+      content: "1";
+    }
+
+    &:nth-of-type(2)::after {
+      content: "2";
+    }
+
+    &:nth-of-type(3)::after {
+      content: "3";
+    }
+
+    &:nth-of-type(4)::after {
+      content: "4";
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-principles__item {
+    margin-right: 80px;
+    margin-bottom: 0;
+  }
 }
