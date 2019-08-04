@@ -2,13 +2,13 @@
   position: relative;
 
   padding-top: 10px;
-  font-size: 20px;
-  line-height: 20px;
 }
 
 .page-header__wrapper {
   display: flex;
   flex-direction: column;
+
+  padding: 0;
 }
 
 .page-header__nav--no-js {
@@ -18,7 +18,7 @@
 }
 
 .page-header__site-logo {
-  padding-bottom: 15px;
+  padding: 0 20px 15px 20px;
 }
 
 .page-header__main-nav {
@@ -35,24 +35,33 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    font-size: 18px;
-    line-height: 25px;
+    padding-top: 24px;
   }
 
   .page-header__wrapper {
     flex-direction: row;
     justify-content: space-between;
+
+    padding: 0 $tablet-padding;
+    padding-bottom: 0;
   }
 
   .page-header__main-nav {
     flex-direction: row;
   }
+
+  .page-header__site-logo {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    padding: 0 $desktop-padding;
+  }
+
   .page-header {
     padding-top: 54px;
-
-    font-size: 20px;
   }
 }
