@@ -112,6 +112,10 @@
     background-image: url("./../img/icon-gift.svg");
     background-repeat: no-repeat;
   }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("./../img/gift-photo-mobile@2x.jpg");
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -182,6 +186,10 @@
     &::before {
       left: 91px;
     }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("./../img/gift-photo-tablet@2x.jpg");
+    }
   }
 }
 
@@ -237,6 +245,10 @@
     &::before {
       left: 50%;
       margin-left: -32.5px;
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("./../img/gift-photo-desktop@2x.jpg");
     }
   }
 

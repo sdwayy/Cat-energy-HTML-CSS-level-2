@@ -7,7 +7,6 @@
 .page-header__wrapper {
   display: flex;
   flex-direction: column;
-
   padding: 0;
 }
 
@@ -18,7 +17,7 @@
 }
 
 .page-header__site-logo {
-  padding: 0 20px 15px 20px;
+  padding: 0 $mobile-padding 16px;
 }
 
 .page-header__main-nav {
@@ -38,6 +37,13 @@
     padding-top: 24px;
   }
 
+  .page-header__nav {
+    display: flex;
+    align-items: center;
+
+    padding-top: 12px;
+  }
+
   .page-header__wrapper {
     flex-direction: row;
     justify-content: space-between;
@@ -53,6 +59,7 @@
   .page-header__site-logo {
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 0;
   }
 }
 

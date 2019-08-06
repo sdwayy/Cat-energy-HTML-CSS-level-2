@@ -132,10 +132,15 @@
 }
 
 .life-example__controls-title {
+  padding: 0 0 5px 0;
+  border: none;
+
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
   text-transform: uppercase;
+
+  background-color: transparent;
 }
 
 @media (min-width: $tablet-width) {
@@ -241,11 +246,8 @@
   }
 
   .life-example__controls-title {
-    padding: 0 0 5px 0;
     font-size: 20px;
 
-    background-color: transparent;
-    border: none;
     border-bottom: 1px dotted #bebebe;
 
     &:first-of-type {
