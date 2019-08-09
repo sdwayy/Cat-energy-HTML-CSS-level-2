@@ -13,9 +13,21 @@
   color: $second-font-color;
   background-color: $bg-color;
 
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  span:active {
+    opacity: 0.3;
+  }
+
   &--second-style {
     color: $main-font-color;
 
     background-color: $second-bg-color;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
   }
 }

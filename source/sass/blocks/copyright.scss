@@ -10,6 +10,24 @@
   line-height: 16px;
 
   @include link;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__logo {
+  @include link;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  svg {
+    &:hover {
+      fill: #68b738;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {

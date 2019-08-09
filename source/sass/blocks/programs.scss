@@ -95,13 +95,27 @@
     content: "";
 
     position: absolute;
-    top: 7px;
+    top: 50%;
     right: -35px;
 
     width: 24px;
     height: 11px;
 
     background-image: url("./../img/icon-right-arrow-long.svg");
+
+    transform: translateY(-50%);
+  }
+
+  &:hover::after {
+    right: -44px;
+
+    width: 33px;
+
+    background-image: url("./../img/icon-right-arrow-verylong.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
