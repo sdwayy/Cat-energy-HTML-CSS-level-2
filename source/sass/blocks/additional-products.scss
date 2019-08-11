@@ -5,7 +5,7 @@
 }
 
 .additional-products__item {
-  padding-top: 14px;
+  padding-top: 13px;
   padding-bottom: 18px;
 
   border-top: 1px solid #ededed;
@@ -18,8 +18,9 @@
 .additional-products__title {
   position: relative;
 
-  padding-top: 20px;
-  padding-bottom: 20px;
+  margin: 0;
+  padding-top: 29px;
+  padding-bottom: 32px;
 
   font-size: 24px;
   line-height: 24px;
@@ -30,7 +31,7 @@
 
     display: inline-block;
     vertical-align: top;
-    padding-right: 25px;
+    padding-right: 22px;
     padding-left: $mobile-padding;
 
     background-color: #ffffff;
@@ -42,7 +43,7 @@
 
     position: absolute;
 
-    top: 55%;
+    top: 50%;
     left: 0;
 
     width: 100%;
@@ -82,10 +83,8 @@
 .additional-products__gift {
   position: relative;
 
-  min-height: 289px;
-  margin-top: 0;
-  margin-bottom: 40px;
-  padding: 190px 55px 20px 55px;
+  margin: 0;
+  padding: 190px 55px 38px 55px;
 
   font-family: $second-font;
   font-size: 16px;
@@ -172,19 +171,14 @@
   }
 
   .additional-products__gift {
-    min-height: 200px;
-    padding: 70px 132px 70px 422px;
+    padding: 70px 125px 70px 422px;
 
     text-align: left;
 
     background-image: url("./../img/gift-photo-tablet@1x.jpg");
 
-    span {
-      width: 170px;
-    }
-
     &::before {
-      left: 91px;
+      left: 120px;
     }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -232,8 +226,8 @@
   }
 
   .additional-products__gift {
+    align-self: stretch;
     width: 245px;
-    min-height: 289px;
     margin: 0;
     padding: 195px 40px 35px 40px;
 
