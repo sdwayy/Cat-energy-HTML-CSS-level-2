@@ -353,6 +353,10 @@
     display: flex;
     justify-content: space-between;
 
+    width: $desktop-width;
+    margin: 0 auto;
+    padding: 0 $desktop-padding;
+
     .wrapper {
       width: unset;
       margin: unset;
