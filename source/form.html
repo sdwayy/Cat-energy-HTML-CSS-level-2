@@ -6,39 +6,207 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 
 <body class="form-body">
+
   <div style="display: none;">
     <include src="./source/img/sprite.svg"></include>
   </div>
-  <header class="page-header">
-    <a class="page-header__site-logo header-logo" href="./index.html">
-      <picture>
-        <source media="(min-width: 1300px)" srcset="./img/logo-desktop.svg">
-        <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
-        <img class="header-logo__img" src="./img/logo-mobile.svg" alt="Наш логотип" width="195" height="40">
-      </picture>
-    </a>
-    <nav class="page-header__nav">
-      <button class="page-header__burger-btn burger-btn" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="page-header__main-nav main-nav visually-hidden">
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Каталог продукции</a>
-        </li>
-        <li class="main-nav__item main-nav__item--active">
-          <a class="main-nav__link" href="#">Подбор программы</a>
-        </li>
-      </ul>
-    </nav>
+
+  <header class="form__page-header page-header">
+    <div class="page-header__wrapper wrapper">
+      <a class="page-header__site-logo header-logo" href="./index.html">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="./img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
+          <img class="header-logo__img" src="./img/logo-mobile.svg" alt="Наш логотип" width="195" height="40">
+        </picture>
+      </a>
+      <nav class="page-header__nav">
+        <button class="page-header__burger-btn burger-btn burger-btn--no-js" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="page-header__main-nav main-nav">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="./index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="./catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link" href="#">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="form-main">
+    <h1 class="form-main__page-title">
+      <div class="wrapper">Подбор программы</div>
+    </h1>
+    <section class="form-main__user-profile user-profile">
+      <h2 class="visually-hidden">Анкета</h2>
+      <div class="wrapper">
+        <p class="user-profile__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      </div>
+      <form class="user-profile__form" method="POST" action="https://echo.htmlacademy.ru">
+        <div class="user-profile__fieldset-container wrapper">
+          <fieldset class="user-profile__input-group user-profile__input-group--about-cat">
+            <legend class="user-profile__group-title-box visually-hidden">
+              <span class="line"></span>
+              <div class="wrapper">
+                <span class="user-profile__group-title">О вашем коте</span>
+              </div>
+            </legend>
+            <div class="wrapper">
+              <ul class="user-profile__input-list user-profile__input-list--about-cat">
+                <li>
+                  <label>
+                    <span class="user-profile__input-name">Имя:<sup>*</sup></span>
+                    <input class="user-profile__input-text" type="text" placeholder="Барсик" name="name" required>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <span class="user-profile__input-name">Вес (кг):<sup>*</sup></span>
+                    <input class="user-profile__input-text" type="text" placeholder="7" name="weight" required>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <span class="user-profile__input-name">Возраст (лет):</span>
+                    <input class="user-profile__input-text" type="text" placeholder="7" name="age">
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset class="user-profile__input-group user-profile__input-group--programs">
+            <legend class="user-profile__group-title-box visually-hidden">Выберите программу</legend>
+            <div class="wrapper">
+              <ul class="user-profile__input-list user-profile__input-list--programs">
+                <li>
+                  <label>
+                    <div class="user-profile__radio-btn radio-btn" tabindex="0">
+                      <input class="radio-btn__input visually-hidden" type="radio" name="program" value="fit" checked tabindex="-1">
+                      <span class="radio-btn__inner"></span>
+                    </div>
+                    Похудение
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <div class="user-profile__radio-btn radio-btn" tabindex="0">
+                      <input class="radio-btn__input visually-hidden" type="radio" name="program" value="pro" tabindex="-1">
+                      <span class="radio-btn__inner"></span>
+                    </div>
+                    Набор массы
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <div class="user-profile__radio-btn radio-btn" tabindex="0">
+                      <input class="radio-btn__input visually-hidden" type="radio" name="program" value="advice" tabindex="-1">
+                      <span class="radio-btn__inner"></span>
+                    </div>
+                    Не знаю (Нужен ваш совет)
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+        </div>
+        <fieldset class="user-profile__input-group user-profile__input-group--contacts">
+          <legend class="user-profile__group-title-box">
+            <span class="line"></span>
+            <div class="wrapper">
+              <span class="user-profile__group-title user-profile__group-title--contacts">Контактные данные (владельца кота)<span>
+            </div>
+          </legend>
+          <div class="wrapper">
+            <ul class="user-profile__input-list user-profile__input-list--contacts">
+              <li>
+                <label>
+                  <span class="user-profile__input-name">E-mail:<sup>*</sup></span>
+                  <input class="user-profile__input-text" type="email" placeholder="kuklachev@gmail.com" name="e-mail" required>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <span class="user-profile__input-name">Телефон:<sup>*</sup></span>
+                  <input class="user-profile__input-text" type="text" placeholder="8 (960) 900-60-90" name="phone" required>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <fieldset class="user-profile__input-group user-profile__input-group--comment">
+          <legend class="user-profile__group-title-box">
+            <span class="line"></span>
+            <div class="wrapper">
+              <span class="user-profile__group-title">Комментарий</span>
+            </div>
+          </legend>
+          <div class="wrapper">
+            <textarea class="user-profile__input-textarea" cols="41" rows="7" placeholder="Расскажите обо всех повадках кота" name="comment"></textarea>
+          </div>
+        </fieldset>
+        <fieldset class="user-profile__input-group user-profile__input-group--additional">
+          <legend class="user-profile__group-title-box">
+            <span class="line"></span>
+            <div class="wrapper">
+              <span class="user-profile__group-title">Дополнительно</span>
+            </div>
+            </div>
+          </legend>
+          <div class="wrapper">
+            <ul class="user-profile__input-list user-profile__input-list--additional">
+              <li>
+                <label>
+                  <div class="user-profile__checkbox checkbox" tabindex="0">
+                    <input class="checkbox__input visually-hidden" type="checkbox" name="sweetener" checked tabindex="-1">
+                    <span class="checkbox__inner"></span>
+                  </div>
+                  Сахарозаменитель
+                </label>
+              </li>
+              <li>
+                <label>
+                  <div class="user-profile__checkbox checkbox" tabindex="0">
+                    <input class="checkbox__input visually-hidden" type="checkbox" name="water" tabindex="-1">
+                    <span class="checkbox__inner"></span>
+                  </div>
+                  Питьевая вода
+                </label>
+              </li>
+              <li>
+                <label>
+                  <div class="user-profile__checkbox checkbox" tabindex="0">
+                    <input class="checkbox__input visually-hidden" type="checkbox" name="milk" tabindex="-1">
+                    <span class="checkbox__inner"></span>
+                  </div>
+                  Молоко
+                </label>
+              </li>
+              <li>
+                <label>
+                  <div class="user-profile__checkbox checkbox" tabindex="0">
+                    <input class="checkbox__input visually-hidden" type="checkbox" name="vitamins" tabindex="-1">
+                    <span class="checkbox__inner"></span>
+                  </div>
+                  Витамины
+                </label>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <div class="wrapper footnote-box">
+          <button class="user-profile__btn btn" type="submit">Отправить заявку</button>
+          <p class="user-profile__footnote">* — Обязательные поля</p>
+        </div>
+      </form>
+    </section>
     <section class="catalog-main__contacts contacts">
       <h2 class="visually-hidden">Наш адрес</h2>
       <div class="contacts__address-box">
@@ -97,6 +265,7 @@
       </div>
     </div>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

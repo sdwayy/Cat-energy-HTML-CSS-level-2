@@ -1,5 +1,12 @@
 .main-nav {
+  display: flex;
+  flex-direction: column;
+
   @include list;
+
+  &--close {
+    display: none;
+  }
 }
 
 .main-nav__item {
@@ -33,6 +40,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-nav {
+    flex-direction: row;
+  }
+
   .main-nav__item {
     margin-right: 35px;
     padding-top: 0;

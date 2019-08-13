@@ -10,17 +10,6 @@
   padding: 0;
 }
 
-.page-header__nav--no-js {
-  .page-header__burger-btn {
-    display: none;
-  }
-
-  .page-header__main-nav {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
 .page-header__site-logo {
   padding: 0 $mobile-padding 15px;
 
@@ -31,10 +20,6 @@
   &:active {
     opacity: 0.6;
   }
-}
-
-.page-header__main-nav {
-  display: none;
 }
 
 .page-header__burger-btn {
@@ -65,11 +50,6 @@
 
     padding: 0 $tablet-padding;
     padding-bottom: 0;
-  }
-
-  .page-header__main-nav {
-    display: flex;
-    flex-direction: row;
   }
 
   .page-header__site-logo {
