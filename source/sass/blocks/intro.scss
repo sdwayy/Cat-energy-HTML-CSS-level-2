@@ -9,7 +9,7 @@
     content: "";
 
     position: absolute;
-    top: 180px;
+    top: 166px;
     left: 50%;
 
     width: 280px;
@@ -31,6 +31,7 @@
 
 .intro__title {
   margin-top: 0;
+  margin-bottom: 25px;
 
   font-size: 36px;
   line-height: 36px;
@@ -39,7 +40,7 @@
 
 .intro__slogan-box {
   min-height: 305px;
-  padding-top: 30px;
+  padding-top: 27px;
 
   background-color: $bg-color;
   background-image: url("./../img/index-background-mobile@1x.jpg");
@@ -58,7 +59,7 @@
 }
 
 .intro__promo {
-  padding-top: 135px;
+  padding-top: 121px;
 }
 
 @media (min-width: $tablet-width) {
@@ -66,7 +67,7 @@
     padding-bottom: 520px;
 
     &::after {
-      top: 230px;
+      top: 252px;
 
       width: 709px;
       height: 609px;
@@ -91,6 +92,7 @@
   }
 
   .intro__slogan-box {
+    padding-top: 52px;
     min-height: auto;
 
     text-align: left;
@@ -106,7 +108,7 @@
 
   .intro__slogan {
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 48px;
 
     font-size: 20px;
     line-height: 20px;
@@ -132,8 +134,8 @@
     background-image: none;
 
     &::after {
-      top: 50px;
-      left: 59%;
+      top: 4.3%;
+      left: 58%;
 
       width: 552px;
       height: 499px;
@@ -153,5 +155,9 @@
     position: relative;
 
     padding-top: 110px;
+  }
+
+  .intro__slogan {
+    margin-bottom: 53px;
   }
 }

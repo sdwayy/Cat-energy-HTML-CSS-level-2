@@ -1,6 +1,6 @@
 .program-principles__title {
   margin-top: 0;
-  margin-bottom: 75px;
+  margin-bottom: 30px;
 
   font-size: 36px;
   line-height: 60px;
@@ -14,10 +14,8 @@
 .program-principles__item {
   position: relative;
 
-  margin-bottom: 30px;
+  margin-bottom: 26px;
   padding-left: 80px;
-
-  font-family: $second-font;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -35,7 +33,7 @@
     background-color: $bg-color;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: 48px;
   }
 
   &--useful::before {
@@ -74,12 +72,15 @@
 .program-principles__description {
   margin: 0;
 
+  font-family: $second-font;
   font-size: 14px;
   line-height: 18px;
 }
 
 @media (min-width: $tablet-width) {
   .program-principles__title {
+    margin-bottom: 72px;
+
     font-size: 60px;
     line-height: 60px;
   }
@@ -92,13 +93,15 @@
   .program-principles__list {
     display: flex;
     flex-wrap: wrap;
+
+    padding-bottom: 102px;
   }
 
   .program-principles__item {
     width: 245px;
-    margin-right: 100px;
-    margin-bottom: 90px;
-    padding-top: 110px;
+    margin-right: 139px;
+    margin-bottom: 133px;
+    padding-top: 112px;
     padding-left: 0;
 
     &::before {
@@ -116,7 +119,7 @@
       content: "";
 
       position: absolute;
-      top: -30px;
+      top: -40px;
       right: 0;
 
       font-size: 281px;
@@ -128,6 +131,8 @@
 
     &:first-of-type::after {
       content: "1";
+
+      right: 15px;
     }
 
     &:nth-of-type(2)::after {
@@ -142,8 +147,12 @@
       content: "4";
     }
 
-    &:last-of-type {
+    &:nth-of-type(2n) {
       margin-right: 0;
+    }
+
+    &:nth-last-child(2),
+    &:last-of-type {
       margin-bottom: 0;
     }
   }
@@ -153,5 +162,13 @@
   .program-principles__item {
     margin-right: 80px;
     margin-bottom: 0;
+
+    &:nth-of-type(2n) {
+      margin-right: 80px;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
   }
 }

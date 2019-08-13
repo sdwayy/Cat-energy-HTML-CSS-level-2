@@ -1,8 +1,8 @@
 .programs__item {
   position: relative;
 
-  margin-bottom: 30px;
-  padding: 32px 20px 25px 25px;
+  margin-bottom: 20px;
+  padding: 30px 20px 21px 20px;
 
   background-color: $second-bg-color;
 
@@ -72,8 +72,8 @@
 
 .programs__description {
   margin: 0;
-  margin-bottom: 20px;
-  padding-bottom: 25px;
+  margin-bottom: 18px;
+  padding-bottom: 21px;
 
   font-family: $second-font;
   font-size: 14px;
@@ -121,7 +121,8 @@
 
 @media (min-width: $tablet-width) {
   .programs__item {
-    padding: 80px 35px 60px 35px;
+    margin-bottom: 30px;
+    padding: 77px 35px 60px 53px;
 
     &::before {
       top: 92px;
@@ -152,6 +153,7 @@
   }
 
   .programs__title {
+    margin-bottom: 25px;
     padding-left: 0;
 
     font-size: 36px;
@@ -159,23 +161,29 @@
   }
 
   .programs__description {
+    margin-bottom: 35px;
+
     font-size: 16px;
     line-height: 24px;
 
     border: none;
 
     &--fit {
-      padding-right: 265px;
+      padding-right: 240px;
     }
 
     &--gain {
-      padding-right: 295px;
+      padding-right: 280px;
     }
   }
 
   .programs__link {
     font-size: 20px;
     line-height: 20px;
+
+    &::after {
+      right: -46px;
+    }
   }
 }
 
@@ -188,7 +196,7 @@
   .programs__item {
     width: 570px;
     margin-bottom: 0;
-    padding: 80px 53px 62px 52px;
+    padding: 75px 53px 62px 52px;
 
     &::before {
       top: 47px;
@@ -221,12 +229,12 @@
   }
 
   .programs__title {
-    padding-left: 134px;
+    padding-left: 160px;
     margin-bottom: 70px;
   }
 
   .programs__description {
-    margin-bottom: 35px;
+    margin-bottom: 15px;
 
     &--fit {
       padding-right: 0;

@@ -1,3 +1,47 @@
 .form-main__contacts--second-color {
   background-color: $second-bg-color;
 }
+
+.form-main__page-title {
+  margin: 0;
+  margin-top: 14px;
+  margin-bottom: 25px;
+  padding-top: 15px;
+
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: normal;
+
+  border-top: 1px solid #e6e6e6;
+}
+
+.form-main__user-profile {
+  margin-bottom: 30px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .form-main__page-title {
+    margin-top: 35px;
+    margin-bottom: 56px;
+
+    font-size: 60px;
+    line-height: 60px;
+
+    border-top: none;
+  }
+
+  .form-main__user-profile {
+    margin-bottom: 72px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-main__page-title {
+    margin-top: 60px;
+  }
+
+  .form-main__user-profile {
+    margin-bottom: 82px;
+  }
+}

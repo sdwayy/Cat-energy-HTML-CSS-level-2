@@ -1,8 +1,8 @@
 .catalog-main__page-title {
   margin: 0;
 
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 14px;
+  padding-bottom: 28px;
 
   font-size: 36px;
   line-height: 60px;
@@ -19,6 +19,11 @@
   background-color: $second-bg-color;
 }
 
+.catalog-main .btn {
+  font-size: 16px;
+  line-height: 20px;
+}
+
 @media (min-width: $tablet-width) {
   .catalog-main__page-title {
     margin-top: 20px;
@@ -32,6 +37,10 @@
 
   .catalog-main__popular-catalog {
     border: none;
+  }
+
+  .catalog-main__additional-products {
+    margin-bottom: 76px;
   }
 }
 
