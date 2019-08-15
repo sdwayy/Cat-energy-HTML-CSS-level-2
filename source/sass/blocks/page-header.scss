@@ -11,6 +11,7 @@
 }
 
 .page-header__site-logo {
+  align-self: flex-start;
   padding: 0 $mobile-padding 15px;
 
   &:hover {

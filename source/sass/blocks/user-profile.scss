@@ -63,39 +63,62 @@
 
   @include list;
 
+  label {
+    display: flex;
+    align-items: center;
+  }
+
   &--about-cat {
     min-height: 160px;
-
-    label {
-      display: flex;
-      align-items: center;
-    }
   }
 
   &--programs {
     min-height: 115px;
-
-    label {
-      display: flex;
-      align-items: center;
-    }
   }
 
   &--contacts {
     min-height: 103px;
-
-    label {
-      display: flex;
-      align-items: center;
-    }
   }
 
   &--additional {
     min-height: 157px;
+  }
+}
 
-    label {
-      display: flex;
-      align-items: center;
+.user-profile__input-box {
+  position: relative;
+
+  flex-grow: 1;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 10px;
+
+    width: 30px;
+    height: 100%;
+
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--email {
+    &::after {
+      background-image: url("./../img/icon-mail-black.svg");
+      background-size: 17px, 13px;
+    }
+
+    &:active::after {
+      background-image: url("./../img/icon-mail-green.svg");
+    }
+  }
+
+  &--tel {
+    &::after {
+      background-image: url("./../img/icon-phone.svg");
+      background-size: 20px, 20px;
     }
   }
 }
@@ -133,13 +156,14 @@
   }
 }
 
+
 .user-profile__input-name {
   margin-right: 15px;
 }
 
 .user-profile__input-text {
-  flex-grow: 1;
-  padding: 12px 15px;
+  width: 100%;
+  padding: 12px 30px 12px 15px;
 
   font-size: inherit;
   line-height: inherit;

@@ -34,4 +34,21 @@
   &--no-js {
     display: none;
   }
+
+  &--cross {
+    &::before {
+      box-shadow: none;
+      top: 50%;
+      margin-top: -1px;
+      transform: rotate(45deg);
+      transition: 0.2s;
+    }
+
+    &::after {
+      top: 50%;
+      margin-top: -1px;
+      transform: rotate(-45deg);
+      transition: 0.2s;
+    }
+  }
 }

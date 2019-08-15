@@ -2,7 +2,6 @@
 @import "./abstracts/mixins";
 @import "./base/normalize";
 @import "./base/global";
-@import "./base/visually-hidden";
 @import "./blocks/btn";
 @import "./blocks/wrapper";
 @import "./blocks/social-list";
@@ -26,3 +25,5 @@
 @import "./blocks/radio-btn";
 @import "./blocks/line";
 @import "./blocks/checkbox";
+@import "./blocks/animations.scss";
+@import "./base/visually-hidden";

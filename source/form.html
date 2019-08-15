@@ -6,12 +6,14 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="preload" href="./fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font">
 </head>
 
 <body class="form-body">
 
   <div style="display: none;">
-    <include src="./source/img/sprite.svg"></include>
+    <include src="./build/img/sprite.svg"></include>
   </div>
 
   <header class="form__page-header page-header">
@@ -63,19 +65,25 @@
                 <li>
                   <label>
                     <span class="user-profile__input-name">Имя:<sup>*</sup></span>
-                    <input class="user-profile__input-text" type="text" placeholder="Барсик" name="name" required>
+                    <div class="user-profile__input-box">
+                      <input class="user-profile__input-text" type="text" placeholder="Барсик" name="name" required>
+                    </div>
                   </label>
                 </li>
                 <li>
                   <label>
                     <span class="user-profile__input-name">Вес (кг):<sup>*</sup></span>
-                    <input class="user-profile__input-text" type="text" placeholder="7" name="weight" required>
+                    <div class="user-profile__input-box">
+                      <input class="user-profile__input-text" type="text" placeholder="7" name="weight" required>
+                    </div>
                   </label>
                 </li>
                 <li>
                   <label>
                     <span class="user-profile__input-name">Возраст (лет):</span>
-                    <input class="user-profile__input-text" type="text" placeholder="7" name="age">
+                    <div class="user-profile__input-box">
+                      <input class="user-profile__input-text" type="text" placeholder="7" name="age">
+                    </div>
                   </label>
                 </li>
               </ul>
@@ -128,13 +136,17 @@
               <li>
                 <label>
                   <span class="user-profile__input-name">E-mail:<sup>*</sup></span>
-                  <input class="user-profile__input-text" type="email" placeholder="kuklachev@gmail.com" name="e-mail" required>
+                  <div class="user-profile__input-box user-profile__input-box--email">
+                    <input class="user-profile__input-text" type="email" placeholder="kuklachev@gmail.com" name="e-mail" required>
+                  </div>
                 </label>
               </li>
               <li>
                 <label>
                   <span class="user-profile__input-name">Телефон:<sup>*</sup></span>
-                  <input class="user-profile__input-text" type="text" placeholder="8 (960) 900-60-90" name="phone" required>
+                  <div class="user-profile__input-box user-profile__input-box--tel">
+                    <input class="user-profile__input-text" type="text" placeholder="8 (960) 900-60-90" name="phone" required>
+                  </div>
                 </label>
               </li>
             </ul>
@@ -264,7 +276,7 @@
       </div>
     </div>
   </footer>
-  <script src="./js/script.js"></script>
+  <script src="./js/min-script.js"></script>
 </body>
 
 </html>

@@ -16,9 +16,19 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var uglify = require("gulp-uglify");
+var htmlmin = require("gulp-htmlmin");
+
+gulp.task("minify", function () {
+  return gulp.src("./source/*.html")
+  .pipe(htmlmin({collapseWhitespace: true}))
+  .pipe(gulp.dest("./build"));
+
+});
 
 gulp.task("js", function () {
   return gulp.src("./source/js/**/*.js")
+    .pipe(uglify())
+    .pipe(rename("min-script.js"))
     .pipe(gulp.dest("./build/js"))
 });
 
@@ -50,7 +60,7 @@ gulp.task("images", function () {
 gulp.task("webp", function() {
   return gulp.src("./source/img/**/*.{png,jpg}")
     .pipe(webp({quality:90}))
-    .pipe(gulp.dest("./source/img"));
+    .pipe(gulp.dest("./build/img"));
 })
 
 gulp.task("sprite", function() {
@@ -59,7 +69,7 @@ gulp.task("sprite", function() {
       inlineSvg: true
     }))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("./source/img"));
+    .pipe(gulp.dest("./build/img"));
 })
 
 gulp.task("html", function () {
@@ -67,6 +77,7 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest("./build"));
 })
 
