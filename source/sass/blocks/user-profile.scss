@@ -4,7 +4,7 @@
 
 .user-profile__description {
   width: 254px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 
   font-size: 14px;
   line-height: 18px;
@@ -26,7 +26,7 @@
   border-bottom: 1px solid #e6e6e6;
 
   &--about-cat {
-    padding-bottom: 25px;
+    padding-bottom: 23px;
   }
 
   &--programs {
@@ -35,7 +35,7 @@
   }
 
   &--contacts {
-    margin-top: 27px;
+    margin-top: 29px;
     border: none;
 
     .line {
@@ -52,6 +52,10 @@
     margin-top: 27px;
     margin-bottom: 33px;
     border: none;
+
+    .user-profile__group-title-box {
+      margin-bottom: 35px;
+    }
   }
 }
 
@@ -69,7 +73,7 @@
   }
 
   &--about-cat {
-    min-height: 160px;
+    min-height: 163px;
   }
 
   &--programs {
@@ -77,7 +81,11 @@
   }
 
   &--contacts {
-    min-height: 103px;
+    min-height: 106px;
+
+    .user-profile__input-name {
+      margin-right: 10px;
+    }
   }
 
   &--additional {
@@ -89,38 +97,6 @@
   position: relative;
 
   flex-grow: 1;
-
-  &::after {
-    content: "";
-
-    position: absolute;
-    top: 0;
-    right: 10px;
-
-    width: 30px;
-    height: 100%;
-
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  &--email {
-    &::after {
-      background-image: url("./../img/icon-mail-black.svg");
-      background-size: 17px, 13px;
-    }
-
-    &:active::after {
-      background-image: url("./../img/icon-mail-green.svg");
-    }
-  }
-
-  &--tel {
-    &::after {
-      background-image: url("./../img/icon-phone.svg");
-      background-size: 20px, 20px;
-    }
-  }
 }
 
 .user-profile__group-title-box {
@@ -128,7 +104,7 @@
 
   display: block;
   width: 100%;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 
   .wrapper {
     padding-left: 0;
@@ -159,11 +135,21 @@
 
 .user-profile__input-name {
   margin-right: 15px;
+
+  sup {
+    top: -0.5px;
+
+    font-size: inherit;
+  }
+
+  &--age {
+    min-width: 94px;
+  }
 }
 
 .user-profile__input-text {
   width: 100%;
-  padding: 12px 30px 12px 15px;
+  padding: 11px 30px 14px 13px;
 
   font-size: inherit;
   line-height: inherit;
@@ -175,13 +161,34 @@
     border-color: #cdcdcd;
   }
 
-  &:active {
+  &:focus {
     border: 2px solid #444444;
   }
 
   &:invalid {
     border: 2px solid #ff8282;
   }
+}
+
+.user-profile__input-icon {
+  position: absolute;
+
+  top: 53%;
+  right: 15px;
+
+  transform: translateY(-53%);
+
+  &--phone {
+    right: 13px;
+  }
+}
+
+.user-profile__input-text:focus + .user-profile__input-icon {
+  fill: #68b738;
+}
+
+.user-profile__input-text:invalid + .user-profile__input-icon {
+  fill: #ff8282;
 }
 
 .user-profile__input-textarea {
@@ -195,8 +202,8 @@
   border: 1px solid #e6e6e6;
 }
 
-.user-profile__radio-btn,
-.user-profile__checkbox {
+.user-profile__checkbox .checkbox__box,
+.user-profile__radio-btn .radio-btn__box {
   margin-right: 15px;
 
   &:hover {
@@ -206,6 +213,7 @@
 
 .user-profile__btn {
   width: 100%;
+
   font-size: 16px;
   line-height: 20px;
 }
@@ -264,7 +272,11 @@
 
     &--additional {
       margin-top: 64px;
-      margin-bottom: 21px;
+      margin-bottom: 23px;
+
+      .user-profile__group-title-box {
+        margin-bottom: 75px;
+      }
     }
 
     .line {
@@ -285,6 +297,10 @@
 
     &--contacts {
       min-height: 125px;
+
+      .user-profile__input-name {
+        margin-right: 18px;
+      }
     }
 
     &--additional {
@@ -307,14 +323,15 @@
     margin-right: 18px;
   }
 
-  .user-profile__radio-btn,
-  .user-profile__checkbox {
+  .user-profile__checkbox .checkbox__box,
+  .user-profile__radio-btn .radio-btn__box {
     margin-right: 20px;
   }
 
   .user-profile__input-text {
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 15px;
   }
 
   .user-profile__group-title {
@@ -392,7 +409,6 @@
     &--about-cat {
       flex-grow: 1;
       margin: 0;
-      margin-right: 80px;
       padding: 0;
       border: none;
     }
@@ -405,7 +421,8 @@
     }
 
     &--contacts {
-      margin-top: 72px;
+      margin-top: 70px;
+      margin-bottom: 70px;
     }
 
     &--comment {
@@ -421,24 +438,36 @@
   .user-profile__input-list {
     &--about-cat {
       min-height: 197px;
+      margin-right: 80px;
     }
 
     &--programs {
-      min-height: 197px;
-      padding: 25px 28px;
+      min-height: 199px;
+      padding: 25px 40px 25px 25px;
       border: 1px solid #e6e6e6;
     }
 
     &--contacts {
       flex-direction: row;
-      min-height: 125px;
+      min-height: unset;
 
       li {
-        flex-grow: 1;
-        margin-right: 80px;
-
         &:nth-of-type(2n) {
           margin-right: 0;
+        }
+      }
+
+      .user-profile__input-name {
+        margin-right: 21px;
+      }
+
+      .user-profile__input-text {
+        &--email {
+          width: 487px;
+        }
+
+        &--phone {
+          width: 472px;
         }
       }
     }
@@ -454,6 +483,11 @@
         }
       }
     }
+  }
+
+  .user-profile__input-icon {
+    top: 50%;
+    right: 20px;
   }
 
   .user-profile__group-title {

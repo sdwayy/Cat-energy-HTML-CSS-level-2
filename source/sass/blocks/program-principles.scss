@@ -88,6 +88,10 @@
   .program-principles__description {
     font-size: 16px;
     line-height: 24px;
+
+    span {
+      margin-right: 5px;
+    }
   }
 
   .program-principles__list {
@@ -159,9 +163,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .program-principles__list {
+    padding-bottom: 0;
+  }
+
   .program-principles__item {
     margin-right: 80px;
-    margin-bottom: 0;
+    margin-bottom: 125px;
 
     &:nth-of-type(2n) {
       margin-right: 80px;

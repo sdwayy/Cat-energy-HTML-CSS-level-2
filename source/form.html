@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.min.css">
-  <link rel="preload" href="./fonts/oswaldregular.woff2" as="font">
-  <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font">
 </head>
 
 <body class="form-body">
@@ -16,7 +16,7 @@
     <include src="./build/img/sprite.svg"></include>
   </div>
 
-  <header class="form__page-header page-header">
+  <header class="page-header">
     <div class="page-header__wrapper wrapper">
       <a class="page-header__site-logo header-logo" href="./index.html">
         <picture>
@@ -80,7 +80,7 @@
                 </li>
                 <li>
                   <label>
-                    <span class="user-profile__input-name">Возраст (лет):</span>
+                    <span class="user-profile__input-name user-profile__input-name--age">Возраст (лет):</span>
                     <div class="user-profile__input-box">
                       <input class="user-profile__input-text" type="text" placeholder="7" name="age">
                     </div>
@@ -94,29 +94,23 @@
             <div class="wrapper">
               <ul class="user-profile__input-list user-profile__input-list--programs">
                 <li>
-                  <label>
-                    <div class="user-profile__radio-btn radio-btn" tabindex="0">
-                      <input class="radio-btn__input visually-hidden" type="radio" name="program" value="fit" checked tabindex="-1">
-                      <span class="radio-btn__inner"></span>
-                    </div>
+                  <label class="user-profile__radio-btn radio-btn">
+                    <input class="radio-btn__input visually-hidden" type="radio" name="program" value="fit" checked tabindex="-1">
+                    <div class="radio-btn__box" tabindex="0"></div>
                     Похудение
                   </label>
                 </li>
                 <li>
-                  <label>
-                    <div class="user-profile__radio-btn radio-btn" tabindex="0">
-                      <input class="radio-btn__input visually-hidden" type="radio" name="program" value="pro" tabindex="-1">
-                      <span class="radio-btn__inner"></span>
-                    </div>
+                  <label class="user-profile__radio-btn radio-btn">
+                    <input class="radio-btn__input visually-hidden" type="radio" name="program" value="fit" checked tabindex="-1">
+                    <div class="radio-btn__box" tabindex="0"></div>
                     Набор массы
                   </label>
                 </li>
                 <li>
-                  <label>
-                    <div class="user-profile__radio-btn radio-btn" tabindex="0">
-                      <input class="radio-btn__input visually-hidden" type="radio" name="program" value="advice" tabindex="-1">
-                      <span class="radio-btn__inner"></span>
-                    </div>
+                  <label class="user-profile__radio-btn radio-btn">
+                    <input class="radio-btn__input visually-hidden" type="radio" name="program" value="fit" checked tabindex="-1">
+                    <div class="radio-btn__box" tabindex="0"></div>
                     Не знаю (Нужен ваш совет)
                   </label>
                 </li>
@@ -136,16 +130,22 @@
               <li>
                 <label>
                   <span class="user-profile__input-name">E-mail:<sup>*</sup></span>
-                  <div class="user-profile__input-box user-profile__input-box--email">
-                    <input class="user-profile__input-text" type="email" placeholder="kuklachev@gmail.com" name="e-mail" required>
+                  <div class="user-profile__input-box">
+                    <input class="user-profile__input-text user-profile__input-text--email" type="email" placeholder="kuklachev@gmail.com" name="e-mail" required>
+                    <svg class="user-profile__input-icon user-profile__input-icon--mail" width="18" height="15">
+                      <use xlink:href="#sprite-icon-mail"></use>
+                    </svg>
                   </div>
                 </label>
               </li>
               <li>
                 <label>
                   <span class="user-profile__input-name">Телефон:<sup>*</sup></span>
-                  <div class="user-profile__input-box user-profile__input-box--tel">
-                    <input class="user-profile__input-text" type="text" placeholder="8 (960) 900-60-90" name="phone" required>
+                  <div class="user-profile__input-box">
+                    <input class="user-profile__input-text user-profile__input-text--phone" type="text" placeholder="8 (960) 900-60-90" name="phone" required>
+                    <svg class="user-profile__input-icon user-profile__input-icon--phone" width="20" height="20">
+                      <use xlink:href="#sprite-icon-phone"></use>
+                    </svg>
                   </div>
                 </label>
               </li>
@@ -174,38 +174,30 @@
           <div class="wrapper">
             <ul class="user-profile__input-list user-profile__input-list--additional">
               <li>
-                <label>
-                  <div class="user-profile__checkbox checkbox" tabindex="0">
-                    <input class="checkbox__input visually-hidden" type="checkbox" name="sweetener" checked tabindex="-1">
-                    <span class="checkbox__inner"></span>
-                  </div>
+                <label class="user-profile__checkbox checkbox">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="sweetener" checked tabindex="-1">
+                  <div class="checkbox__box" tabindex="0"></div>
                   Сахарозаменитель
                 </label>
               </li>
               <li>
-                <label>
-                  <div class="user-profile__checkbox checkbox" tabindex="0">
-                    <input class="checkbox__input visually-hidden" type="checkbox" name="water" tabindex="-1">
-                    <span class="checkbox__inner"></span>
-                  </div>
+                <label class="user-profile__checkbox checkbox">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="sweetener" tabindex="-1">
+                  <div class="checkbox__box" tabindex="0"></div>
                   Питьевая вода
                 </label>
               </li>
               <li>
-                <label>
-                  <div class="user-profile__checkbox checkbox" tabindex="0">
-                    <input class="checkbox__input visually-hidden" type="checkbox" name="milk" tabindex="-1">
-                    <span class="checkbox__inner"></span>
-                  </div>
+                <label class="user-profile__checkbox checkbox">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="sweetener" tabindex="-1">
+                  <div class="checkbox__box" tabindex="0"></div>
                   Молоко
                 </label>
               </li>
               <li>
-                <label>
-                  <div class="user-profile__checkbox checkbox" tabindex="0">
-                    <input class="checkbox__input visually-hidden" type="checkbox" name="vitamins" tabindex="-1">
-                    <span class="checkbox__inner"></span>
-                  </div>
+                <label class="user-profile__checkbox checkbox">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="sweetener" tabindex="-1">
+                  <div class="checkbox__box" tabindex="0"></div>
                   Витамины
                 </label>
               </li>
@@ -218,7 +210,7 @@
         </div>
       </form>
     </section>
-    <section class="catalog-main__contacts contacts">
+    <section class="form-main__contacts contacts">
       <h2 class="visually-hidden">Наш адрес</h2>
       <div class="contacts__address-box">
         <div class="wrapper">
@@ -238,38 +230,40 @@
       </a>
     </section>
   </main>
-  <footer class="index-footer page-footer">
+  <footer class="form-footer page-footer">
     <div class="wrapper">
       <a class="page-footer__logo footer-logo" href="">
         <img class="footer-logo__img" src="./img/logo-footer.svg" alt="Наш логотип" width="128" height="24">
       </a>
-      <ul class="page-footer__social-list social-list">
-        <li class="social-list__item">
-          <a class="social-list__link" href="#">
-            <svg class="social-list__icon-vk" width="22" height="12" aria-label="CatEnergy в Вконтакте">
-              <use xlink:href="#sprite-icon-vk"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#">
-            <svg class="social-list__icon-insta" width="16" height="16" aria-label="CatEnergy в Инстаграме">
-              <use xlink:href="#sprite-icon-insta"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#">
-            <svg class="social-list__icon-fb" width="10" height="19" aria-label="CatEnergy на Фейсбуке">
-              <use xlink:href="#sprite-icon-fb"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+      <div class="page-footer__social-box">
+        <ul class="page-footer__social-list social-list">
+          <li class="social-list__item">
+            <a class="social-list__link" href="#">
+              <svg class="social-list__icon-vk" width="22" height="12" aria-label="CatEnergy в Вконтакте">
+                <use xlink:href="#sprite-icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="#">
+              <svg class="social-list__icon-insta" width="16" height="16" aria-label="CatEnergy в Инстаграме">
+                <use xlink:href="#sprite-icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="#">
+              <svg class="social-list__icon-fb" width="23" height="19" aria-label="CatEnergy на Фейсбуке">
+                <use xlink:href="#sprite-icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
       <div class="page-footer__copyright copyright">
         <a class="copyright__title" href="https://htmlacademy.ru/intensive/adaptive" title="Перейти на сайт академии">HTML Academy</a>
         <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" title="Перейти на сайт академии">
-          <svg width="40" height="40">
+          <svg width="43" height="43" aria-label="Логотип академии">
             <use xlink:href="#sprite-htmlacademy"></use>
           </svg>
         </a>

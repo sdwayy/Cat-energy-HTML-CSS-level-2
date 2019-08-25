@@ -1,3 +1,7 @@
+.programs__list {
+  @include list;
+}
+
 .programs__item {
   position: relative;
 
@@ -55,10 +59,6 @@
   }
 }
 
-.programs__list {
-  @include list;
-}
-
 .programs__title {
   margin: 0;
   margin-bottom: 30px;
@@ -102,6 +102,7 @@
     height: 11px;
 
     background-image: url("./../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
 
     transform: translateY(-50%);
   }
@@ -114,7 +115,8 @@
     background-image: url("./../img/icon-right-arrow-verylong.svg");
   }
 
-  &:active {
+  &:active,
+  &:visited {
     opacity: 0.3;
   }
 }
@@ -184,6 +186,10 @@
     &::after {
       right: -46px;
     }
+
+    &:hover::after {
+      right: -55px;
+    }
   }
 }
 
@@ -191,11 +197,11 @@
   .programs__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .programs__item {
     width: 570px;
-    margin-bottom: 0;
     padding: 75px 53px 62px 52px;
 
     &::before {
@@ -207,6 +213,10 @@
       height: 100px;
 
       transform: translateY(0);
+    }
+
+    &:last-of-type {
+      margin-bottom: 30px;
     }
 
     &--fit-program::after {

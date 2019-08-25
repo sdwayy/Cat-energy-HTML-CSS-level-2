@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.min.css">
-  <link rel="preload" href="./fonts/oswaldregular.woff2" as="font">
-  <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font">
 </head>
 
 <body class="catalog-body">
@@ -308,7 +308,7 @@
                 <div class="additional-products__product-box">
                   <h3 class="additional-products__product-name">Питьевая вода</h3>
                   <div class="additional-products__price-box">
-                    <span class="additional-products__quantitu">5 литров</span>
+                    <span class="additional-products__quantitu additional-products__quantitu--water">5 литров</span>
                     <span class="additional-products__price">50 Р.</span>
                   </div>
                 </div>
@@ -364,37 +364,40 @@
       <a class="page-footer__logo footer-logo" href="">
         <img class="footer-logo__img" src="./img/logo-footer.svg" alt="Наш логотип" width="128" height="24">
       </a>
-      <ul class="page-footer__social-list social-list">
-        <li class="social-list__item">
-          <a class="social-list__link" href="#">
-            <svg class="social-list__icon-vk" width="22" height="12" aria-label="CatEnergy в Вконтакте">
-              <use xlink:href="#sprite-icon-vk"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#">
-            <svg class="social-list__icon-insta" width="16" height="16" aria-label="CatEnergy в Инстаграме">
-              <use xlink:href="#sprite-icon-insta"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#">
-            <svg class="social-list__icon-fb" width="10" height="19" aria-label="CatEnergy на Фейсбуке">
-              <use xlink:href="#sprite-icon-fb"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+      <div class="page-footer__social-box">
+        <ul class="page-footer__social-list social-list">
+          <li class="social-list__item">
+            <a class="social-list__link" href="#">
+              <svg class="social-list__icon-vk" width="22" height="12" aria-label="CatEnergy в Вконтакте">
+                <use xlink:href="#sprite-icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="#">
+              <svg class="social-list__icon-insta" width="16" height="16" aria-label="CatEnergy в Инстаграме">
+                <use xlink:href="#sprite-icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="#">
+              <svg class="social-list__icon-fb" width="23" height="19" aria-label="CatEnergy на Фейсбуке">
+                <use xlink:href="#sprite-icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
       <div class="page-footer__copyright copyright">
         <a class="copyright__title" href="https://htmlacademy.ru/intensive/adaptive" title="Перейти на сайт академии">HTML Academy</a>
         <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" title="Перейти на сайт академии">
-          <svg width="40" height="40">
+          <svg width="43" height="43" aria-label="Логотип академии">
             <use xlink:href="#sprite-htmlacademy"></use>
           </svg>
         </a>
       </div>
+    </div>
   </footer>
   <script src="./js/min-script.js"></script>
 </body>

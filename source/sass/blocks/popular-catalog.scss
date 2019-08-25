@@ -5,17 +5,15 @@
 .popular-catalog__item {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 20px 22px 20px;
+  padding: 0 20px 24px 20px;
 
   border-bottom: 1px solid #ededed;
 
   &--show-more {
-    display: block;
-
     position: relative;
 
+    display: block;
     padding-top: 79px;
-    padding-bottom: 23px;
 
     text-align: center;
   }
@@ -24,7 +22,7 @@
 .popular-catalog__item-name {
   width: 75px;
   margin-top: 21px;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 
   font-size: 16px;
   line-height: 20px;
@@ -36,13 +34,17 @@
   @include link;
 }
 
+.popular-catalog__item-img {
+  height: 142px;
+}
+
 .popular-catalog__item-description {
   width: 140px;
   padding: 0;
 
   font-family: $second-font;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 14px;
 
   border-spacing: 0;
 }
@@ -58,6 +60,8 @@
 
 .popular-catalog__btn {
   width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .popular-catalog__more-populars {
@@ -100,10 +104,6 @@
     padding-left: $tablet-padding;
   }
 
-  .popular-catalog__item-box {
-    width: 100%;
-  }
-
   .popular-catalog__item {
     position: relative;
     align-self: flex-start;
@@ -112,7 +112,7 @@
     min-height: 431px;
     margin-right: 60px;
     margin-bottom: 140px;
-    padding: 160px 37px 40px 38px;
+    padding: 164px 37px 39px 38px;
 
     background-color: $second-bg-color;
 
@@ -138,6 +138,12 @@
     }
   }
 
+  .popular-catalog__item-box {
+    width: 100%;
+    padding-bottom: 8px;
+  }
+
+
   .popular-catalog__item-img {
     position: absolute;
     left: 50%;
@@ -145,17 +151,17 @@
     transform: translateX(-50%);
 
     &--big {
-      top: -85px;
+      top: -81px;
 
       width: 320px;
-      height: 210px;
+      height: 208px;
     }
 
     &--small {
-      top: -50px;
+      top: -45px;
 
       width: 320px;
-      height: 175px;
+      height: 172px;
     }
   }
 
@@ -182,11 +188,12 @@
 
     &::before {
       top: 55px;
-      left: 50%;
 
       width: 60px;
       height: 60px;
       margin-left: -30px;
+
+      background-image: url("./../img/icon-plus.svg");
     }
   }
 
@@ -240,10 +247,16 @@
 
     &:nth-last-child(1) {
       margin-bottom: 0;
-      padding: 160px 38px 40px 38px;
+      padding: 165px 38px 37px 38px;
 
       background-color: #ffffff;
       border: 1px solid #e6e6e6;
     }
+  }
+
+  .popular-catalog__more-tastes {
+    margin-top: -37px;
+
+    line-height: 18px;
   }
 }

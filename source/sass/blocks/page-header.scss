@@ -37,8 +37,8 @@
   .page-header__nav {
     display: flex;
     align-items: center;
-
-    padding-top: 9px;
+    max-width: 440px;
+    padding-top: 19px;
 
     .page-header__burger-btn {
       display: none;
@@ -67,5 +67,9 @@
 
   .page-header {
     padding-top: 54px;
+  }
+
+  .page-header__nav {
+    max-width: 600px;
   }
 }

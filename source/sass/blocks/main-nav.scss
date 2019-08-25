@@ -1,6 +1,7 @@
 .main-nav {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 
   @include list;
 
@@ -34,7 +35,8 @@
     opacity: 0.6;
   }
 
-  &:active {
+  &:active,
+  &:visited {
     opacity: 0.3;
   }
 }
@@ -45,6 +47,7 @@
   }
 
   .main-nav__item {
+    margin-bottom: 15px;
     margin-right: 35px;
     padding-top: 0;
     padding-bottom: 8px;
@@ -78,5 +81,13 @@
 
   .main-nav__link {
     font-size: 20px;
+
+    &--second-style {
+      position: relative;
+
+      color: $second-font-color;
+
+      z-index: 3;
+    }
   }
 }

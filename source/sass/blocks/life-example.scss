@@ -1,6 +1,6 @@
 .life-example {
   padding-top: 17px;
-
+  padding-bottom: 31px;
   background-color: $second-bg-color;
 }
 
@@ -56,18 +56,17 @@
   @include list;
 
   display: flex;
-
-  margin-bottom: 35px;
-
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
 }
 
 .life-example__results-box {
   position: relative;
 
   width: 124px;
-  padding-top: 14px;
-  padding-bottom: 15px;
+  margin-bottom: 25px;
+  padding: 15px 5px;
 
   text-align: center;
 
@@ -98,18 +97,12 @@
 }
 
 .life-example__nutrition-cost {
-  margin-bottom: 0;
+  margin: 0;
 
   font-size: 14px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-}
-
-.life-example__slider {
-  .wrapper {
-    padding-bottom: 31px;
-  }
 }
 
 .life-example__controls-box {
@@ -153,6 +146,8 @@
   text-transform: uppercase;
 
   background-color: transparent;
+
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
@@ -179,7 +174,7 @@
   }
 
   .life-example__story-box {
-    margin-bottom: 171px;
+    margin-bottom: 169px;
   }
 
   .life-example__img-box {
@@ -189,14 +184,13 @@
     background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
 
     img {
-      width: 677px;
-      height: 510px;
+      width: 675px;
+      height: 518px;
     }
   }
 
   .life-example__img {
-    top: -160px;
-    width: 50%;
+    top: -170px;
 
     &--after {
       left: unset;
@@ -205,12 +199,13 @@
   }
 
   .life-example__results-list {
+    width: 366px;
     margin-bottom: 0;
   }
 
   .life-example__results-box {
     width: 162px;
-    margin-right: 42px;
+    margin-bottom: 20px;
     padding: 16.5px 0;
 
     &:last-of-type {
@@ -243,10 +238,8 @@
   }
 
   .life-example__nutrition-cost {
-    align-self: center;
-
     width: 190px;
-    margin-top: 0;
+    margin-top: 12px;
 
     font-size: 20px;
     line-height: 20px;
@@ -261,15 +254,13 @@
   .life-example__result-wrapper {
     display: flex;
 
-    padding-bottom: 85px;
+    padding-bottom: 67px;
 
     justify-content: space-between;
   }
 
   .life-example__slider {
     position: relative;
-
-    padding-bottom: 40px;
 
     .wrapper {
       padding-bottom: 71px;
@@ -299,6 +290,14 @@
     &:nth-of-type(2) {
       margin-left: 25px;
     }
+
+    &:hover {
+      border-bottom: 1px solid #989898;
+    }
+
+    &:focus {
+      border-bottom: none;
+    }
   }
 
   .life-example__controls {
@@ -322,6 +321,21 @@
     background-color: #ffffff;
     border: 1px solid #e2e2e2;
     border-radius: 50%;
+
+    box-shadow: 0 2px 5px 0 rgba($color: #000000, $alpha: 0.15);
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 3px 5px 0 rgba($color: #000000, $alpha: 0.25);
+    }
+
+    &:focus {
+      width: 35px;
+      height: 35px;
+      border: 2px solid #68b738;
+
+      box-shadow: 0 4px 5px 0 rgba($color: #000000, $alpha: 0.3);
+    }
   }
 
   .life-example__control-inner {
@@ -334,8 +348,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .life-example {
+    padding-top: 0;
+  }
+
   .life-example__content-box {
-    background: linear-gradient(to right, #f2f2f2 71.8%, #eaeaea 28.2%);
+    background: linear-gradient(to right, #f2f2f2 72.3%, #eaeaea 27.7%);
 
     .wrapper {
       width: auto;
@@ -370,7 +388,7 @@
   }
 
   .life-example__results-list {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
 
   .life-example__result-wrapper {
@@ -400,14 +418,13 @@
   }
 
   .life-example__slider {
+    min-width: 677px;
     padding-bottom: 0;
 
     .wrapper {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-
-      min-height: 277px;
 
       background: none;
     }
@@ -416,9 +433,31 @@
   .life-example__img-box {
     min-height: 230px;
     margin-bottom: 62px;
+    padding-bottom: 231px;
+
+    background: none;
+
+    img {
+      width: 685px;
+      height: 515px;
+    }
+  }
+
+  .life-example__img {
+    top: -260px;
+    left: 30px;
   }
 
   .life-example__controls-box {
     padding-right: 0;
+    padding-left: 107px;
+  }
+
+  .life-example__control-btn:first-of-type {
+    margin-right: 20px;
+  }
+
+  .life-example__control-btn:nth-of-type(2) {
+    margin-left: 20px;
   }
 }

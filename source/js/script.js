@@ -13,4 +13,6 @@ burgerBtn.addEventListener("click", function (evt) {
 
 if (window.matchMedia("(max-width: 767px)").matches) {
   mainNav.classList.add("main-nav--close");
+} else {
+    mainNav.classList.remove("main-nav--close")
 }

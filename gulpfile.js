@@ -16,6 +16,7 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var uglify = require("gulp-uglify");
+var concat = require('gulp-concat');
 var htmlmin = require("gulp-htmlmin");
 
 gulp.task("minify", function () {
@@ -28,6 +29,7 @@ gulp.task("minify", function () {
 gulp.task("js", function () {
   return gulp.src("./source/js/**/*.js")
     .pipe(uglify())
+    .pipe(concat('all.js'))
     .pipe(rename("min-script.js"))
     .pipe(gulp.dest("./build/js"))
 });

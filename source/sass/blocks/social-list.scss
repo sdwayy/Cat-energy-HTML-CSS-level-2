@@ -1,16 +1,15 @@
 .social-list {
-  @include list;
-
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  width: 135px;
 
-  min-width: 100px;
+  @include list;
 }
 
 .social-list__item {
   margin-right: 30px;
 
-  &:last-of-type {
+  &:nth-of-type(3n) {
     margin-right: 0;
   }
 }
@@ -35,8 +34,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .social-list {
+    width: 145px;
+  }
+
   .social-list__item {
-    margin-right: 23px;
+    margin-right: 25px;
   }
 
   .social-list__link {
@@ -55,7 +58,7 @@
   }
 
   .social-list__icon-fb {
-    width: 14px;
+    width: 25px;
     height: 28px;
   }
 }

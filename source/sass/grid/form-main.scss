@@ -1,4 +1,4 @@
-.form-main__contacts--second-color {
+.form-main__contacts {
   background-color: $second-bg-color;
 }
 
@@ -15,9 +15,8 @@
 }
 
 .form-main__user-profile {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
-
 
 @media (min-width: $tablet-width) {
   .form-main__page-title {
@@ -37,7 +36,8 @@
 
 @media (min-width: $desktop-width) {
   .form-main__page-title {
-    margin-top: 60px;
+    margin-top: 65px;
+    padding-top: 0;
   }
 
   .form-main__user-profile {

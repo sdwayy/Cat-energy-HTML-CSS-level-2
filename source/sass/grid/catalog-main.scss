@@ -15,6 +15,10 @@
   border-top: 1px solid #d9d9d9;
 }
 
+.catalog-main__additional-products {
+  margin-bottom: 35px;
+}
+
 .catalog-main__contacts {
   background-color: $second-bg-color;
 }
@@ -26,7 +30,7 @@
 
 @media (min-width: $tablet-width) {
   .catalog-main__page-title {
-    margin-top: 20px;
+    margin-top: 38px;
     margin-bottom: 135px;
 
     font-size: 60px;
@@ -36,6 +40,7 @@
   }
 
   .catalog-main__popular-catalog {
+    margin-bottom: 35px;
     border: none;
   }
 
@@ -46,8 +51,12 @@
 
 @media (min-width: $desktop-width) {
   .catalog-main__page-title {
-    margin-top: 53px;
-    margin-bottom: 125px;
+    margin-top: 62px;
+    margin-bottom: 136px;
+  }
+
+  .catalog-main__popular-catalog {
+    margin-bottom: 47px;
   }
 
   .catalog-main__additional-products {
