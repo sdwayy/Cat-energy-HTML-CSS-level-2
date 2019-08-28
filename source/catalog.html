@@ -45,9 +45,9 @@
   </header>
   <main class="catalog-main">
     <h1 class="catalog-main__page-title">
-      <div class="wrapper">
+      <span class="wrapper">
         <span>Каталог продукции</span>
-      </div>
+      </span>
     </h1>
     <section class="catalog-main__popular-catalog popular-catalog">
       <h2 class="visually-hidden">Популярные товары</h2>
@@ -92,7 +92,7 @@
               <source media="(min-width: 320px)" type="image/webp" srcset="./img/chicken-big-mobile@1x.webp 1x, ./img/chicken-big-mobile@2x.webp 2x">
               <source media="(min-width: 1300px)" srcset="./img/chicken-big-desktop@1x.png 1x, ./img/chicken-big-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="./img/chicken-big-tablet@1x.png 1x, ./img/chicken-big-tablet@2x.png 2x">
-              <img class="popular-catalog__item-img popular-catalog__item-img--big" src="./img/chicken-big-mobile@1x.jpg 1x" alt="Cat Energy pro chicken 500 г" width="140" height="144" srcset="./img/chicken-big-mobile@2x.jpg 2x">
+              <img class="popular-catalog__item-img popular-catalog__item-img--big" src="./img/chicken-big-mobile@1x.jpg" alt="Cat Energy pro chicken 500 г" width="140" height="144" srcset="./img/chicken-big-mobile@2x.jpg 2x">
             </picture>
           </a>
           <div class="popular-catalog__item-box">
@@ -282,14 +282,13 @@
           <a href="" class="popular-catalog__btn btn btn--second-style"><span>Показать все</span></a>
         </li>
       </ul>
-      </div>
     </section>
     <section class="catalog-main__additional-products additional-products">
         <h2 class="additional-products__title-box">
           <span class="line"></span>
-          <div class="wrapper">
+          <span class="wrapper">
             <span class="additional-products__title">Дополнительные товары</span>
-          </div>
+          </span>
         </h2>
         <div class="additional-products__content-box">
           <div class="wrapper">
@@ -368,21 +367,24 @@
         <ul class="page-footer__social-list social-list">
           <li class="social-list__item">
             <a class="social-list__link" href="#">
-              <svg class="social-list__icon-vk" width="22" height="12" aria-label="CatEnergy в Вконтакте">
+              <span class="visually-hidden">ВКонтакте</span>
+              <svg class="social-list__icon-vk" width="22" height="12">
                 <use xlink:href="#sprite-icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social-list__link" href="#">
-              <svg class="social-list__icon-insta" width="16" height="16" aria-label="CatEnergy в Инстаграме">
+              <span class="visually-hidden">Instagram</span>
+              <svg class="social-list__icon-insta" width="16" height="16">
                 <use xlink:href="#sprite-icon-insta"></use>
               </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social-list__link" href="#">
-              <svg class="social-list__icon-fb" width="23" height="19" aria-label="CatEnergy на Фейсбуке">
+              <span class="visually-hidden">Facebook</span>
+              <svg class="social-list__icon-fb" width="23" height="19">
                 <use xlink:href="#sprite-icon-fb"></use>
               </svg>
             </a>

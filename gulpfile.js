@@ -23,13 +23,12 @@ gulp.task("minify", function () {
   return gulp.src("./source/*.html")
   .pipe(htmlmin({collapseWhitespace: true}))
   .pipe(gulp.dest("./build"));
-
 });
 
 gulp.task("js", function () {
   return gulp.src("./source/js/**/*.js")
-    .pipe(uglify())
     .pipe(concat('all.js'))
+    .pipe(uglify())
     .pipe(rename("min-script.js"))
     .pipe(gulp.dest("./build/js"))
 });
@@ -107,7 +106,6 @@ gulp.task("copy", function () {
   return gulp.src([
     "./source/fonts/**/*.{woff,woff2}",
     "./source/img/**",
-    "./source/js/**",
     "./source/*.ico"
   ], {
     base: "./source"

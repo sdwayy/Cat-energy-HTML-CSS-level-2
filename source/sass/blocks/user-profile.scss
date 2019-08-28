@@ -73,14 +73,17 @@
   }
 
   &--about-cat {
+    height: 162px;
     min-height: 163px;
   }
 
   &--programs {
+    height: 114px;
     min-height: 115px;
   }
 
   &--contacts {
+    height: 105px;
     min-height: 106px;
 
     .user-profile__input-name {
@@ -89,6 +92,7 @@
   }
 
   &--additional {
+    height: 156px;
     min-height: 157px;
   }
 }
