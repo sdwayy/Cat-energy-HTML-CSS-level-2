@@ -25,6 +25,10 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: normal;
+
+  .wrapper {
+    padding-left: 0;
+  }
 }
 
 .additional-products__title {
@@ -34,13 +38,10 @@
   vertical-align: top;
   padding-right: 22px;
   padding-left: $mobile-padding;
+  color: $title-font-color;
 
   background-color: #ffffff;
   z-index: 2;
-
-  .wrapper {
-    padding-left: 0;
-  }
 }
 
 .additional-products__product-name {
@@ -51,6 +52,7 @@
   line-height: 16px;
   font-weight: normal;
   text-transform: uppercase;
+  color: #222222;
 }
 
 .additional-products__price-box {
@@ -109,6 +111,11 @@
 @media (min-width: $tablet-width) {
   .additional-products__title-box {
     margin-bottom: 47px;
+
+    .wrapper {
+      padding-left: $tablet-padding;
+      padding-right: $tablet-padding;
+    }
   }
 
   .additional-products__title {
@@ -117,16 +124,11 @@
 
     font-size: 36px;
     line-height: 36px;
-
-    .wrapper {
-      padding-left: $tablet-padding;
-      padding-right: $tablet-padding;
-    }
   }
 
 
   .additional-products__list {
-    margin-bottom: 65px;
+    margin-bottom: 69px;
   }
 
   .additional-products__item {
@@ -163,7 +165,7 @@
   }
 
   .additional-products__price-box {
-    padding-top: 4px;
+    padding-top: 3px;
 
     font-size: 16px;
     line-height: 20px;

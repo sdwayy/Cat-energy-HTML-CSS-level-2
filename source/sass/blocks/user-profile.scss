@@ -4,10 +4,12 @@
 
 .user-profile__description {
   width: 254px;
+  margin-top: 0;
   margin-bottom: 38px;
 
   font-size: 14px;
   line-height: 18px;
+  color: $title-font-color;
 }
 
 .user-profile__form {
@@ -49,7 +51,7 @@
   }
 
   &--additional {
-    margin-top: 27px;
+    margin-top: 29px;
     margin-bottom: 33px;
     border: none;
 
@@ -57,11 +59,17 @@
       margin-bottom: 35px;
     }
   }
+
+  div.wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 
 .user-profile__input-list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
 
@@ -73,17 +81,14 @@
   }
 
   &--about-cat {
-    height: 162px;
     min-height: 163px;
   }
 
   &--programs {
-    height: 114px;
     min-height: 115px;
   }
 
   &--contacts {
-    height: 105px;
     min-height: 106px;
 
     .user-profile__input-name {
@@ -92,7 +97,6 @@
   }
 
   &--additional {
-    height: 156px;
     min-height: 157px;
   }
 }
@@ -126,6 +130,7 @@
   font-size: 24px;
   line-height: 24px;
   text-transform: none;
+  color: $title-font-color;
 
   background-color: #ffffff;
   z-index: 2;
@@ -154,23 +159,28 @@
 .user-profile__input-text {
   width: 100%;
   padding: 11px 30px 14px 13px;
+  border: 1px solid #e6e6e6;
 
   font-size: inherit;
   line-height: inherit;
   text-transform: inherit;
-
-  border: 1px solid #e6e6e6;
+  color: $main-font-color;
 
   &:hover {
     border-color: #cdcdcd;
   }
 
   &:focus {
-    border: 2px solid #444444;
+    border-color: #444444;
+    outline: 1px solid #444444;
   }
 
   &:invalid {
-    border: 2px solid #ff8282;
+    border-color: #ff8282;
+  }
+
+  &:focus:invalid {
+    outline-color: #ff8282;
   }
 }
 
@@ -202,6 +212,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  color: $main-font-color;
 
   border: 1px solid #e6e6e6;
 }
@@ -231,6 +242,7 @@
   line-height: 16px;
   text-align: center;
   text-transform: none;
+  color: $main-font-color;
 }
 
 @media (min-width: $tablet-width) {
@@ -434,7 +446,7 @@
     }
 
     &--additional {
-      margin-top: 64px;
+      margin-top: 70px;
       margin-bottom: 21px;
     }
   }
@@ -481,6 +493,7 @@
 
       li {
         width: 20%;
+        margin-bottom: 10px;
 
         &:nth-of-type(2n) {
           padding-left: 0;

@@ -28,7 +28,7 @@
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
-
+  color: $title-font-color;
   text-transform: uppercase;
 
   &:hover {
@@ -67,6 +67,8 @@
     font-size: 18px;
     line-height: 25px;
     font-weight: 400;
+
+    color: #222222;
   }
 }
 
@@ -81,6 +83,7 @@
 
   .main-nav__link {
     font-size: 20px;
+    color: $title-font-color;
 
     &--second-style {
       position: relative;

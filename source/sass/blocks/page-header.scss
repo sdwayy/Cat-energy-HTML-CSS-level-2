@@ -57,6 +57,11 @@
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 0;
+
+    img {
+      width: 173px;
+      height: 62px;
+    }
   }
 }
 
@@ -71,5 +76,11 @@
 
   .page-header__nav {
     max-width: 600px;
+  }
+
+  .page-header__site-logo {
+    img {
+      width: 202px;
+    }
   }
 }

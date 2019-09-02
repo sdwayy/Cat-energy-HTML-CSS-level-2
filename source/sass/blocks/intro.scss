@@ -87,7 +87,7 @@
 
   .intro__title {
     width: 500px;
-    margin-bottom: 36px;
+    margin-bottom: 40px;
 
     font-size: 60px;
     line-height: 60px;
@@ -95,11 +95,11 @@
   }
 
   .intro__slogan-box {
-    padding-top: 56px;
+    padding-top: 50px;
     min-height: auto;
 
     text-align: left;
-    color: $main-font-color;
+    color: $title-font-color;
 
     background-color: #ffffff;
     background-image: none;
@@ -156,7 +156,7 @@
   .intro__slogan-box {
     position: relative;
 
-    padding-top: 105px;
+    padding-top: 100px;
 
     .wrapper {
       padding-left: 120px;

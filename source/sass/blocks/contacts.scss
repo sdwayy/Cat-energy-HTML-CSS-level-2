@@ -8,13 +8,14 @@
 }
 
 .contacts__address {
+  flex-shrink: 2;
+
   font-family: $second-font;
   font-size: 14px;
   line-height: 20px;
   font-weight: normal;
   font-style: normal;
-
-  flex-shrink: 2;
+  color: $main-font-color;
 }
 
 .contacts__cooperation {
@@ -24,6 +25,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  color: $title-font-color;
 }
 
 .contacts__map-box {
@@ -147,7 +149,7 @@
       margin: 0;
     }
 
-    z-index: 2;
+    z-index: 4;
   }
 
   .contacts__map {

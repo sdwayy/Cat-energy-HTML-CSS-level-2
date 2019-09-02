@@ -1,13 +1,13 @@
 .btn {
-  display: block;
-
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   padding-top: 11px;
   padding-bottom: 11px;
   border: none;
 
   font-size: 14px;
   line-height: 18px;
-  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
 
@@ -18,8 +18,10 @@
     background-color: #5eaa2f;
   }
 
-  span:active {
-    opacity: 0.3;
+  &:active {
+    span {
+      opacity: 0.3;
+    }
   }
 
   &--second-style {

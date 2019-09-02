@@ -22,7 +22,7 @@
         <picture>
           <source media="(min-width: 1300px)" srcset="./img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
-          <img class="header-logo__img" src="./img/logo-mobile.svg" alt="Наш логотип" width="195" height="40">
+          <img src="./img/logo-mobile.svg" alt="Наш логотип" width="195" height="40">
         </picture>
       </a>
       <nav class="page-header__nav">
@@ -102,14 +102,14 @@
                 </li>
                 <li>
                   <label class="user-profile__radio-btn radio-btn">
-                    <input class="radio-btn__input visually-hidden" type="radio" name="program" value="fit" checked tabindex="-1">
+                    <input class="radio-btn__input visually-hidden" type="radio" name="program" value="fit" tabindex="-1">
                     <span class="radio-btn__box" tabindex="0"></span>
                     Набор массы
                   </label>
                 </li>
                 <li>
                   <label class="user-profile__radio-btn radio-btn">
-                    <input class="radio-btn__input visually-hidden" type="radio" name="program" value="fit" checked tabindex="-1">
+                    <input class="radio-btn__input visually-hidden" type="radio" name="program" value="fit" tabindex="-1">
                     <span class="radio-btn__box" tabindex="0"></span>
                     Не знаю (Нужен ваш совет)
                   </label>
@@ -204,7 +204,9 @@
           </div>
         </fieldset>
         <div class="wrapper footnote-box">
-          <button class="user-profile__btn btn" type="submit">Отправить заявку</button>
+          <button class="user-profile__btn btn" type="submit">
+            <span>Отправить заявку</span>
+          </button>
           <p class="user-profile__footnote">* — Обязательные поля</p>
         </div>
       </form>

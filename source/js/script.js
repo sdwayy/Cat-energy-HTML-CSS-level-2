@@ -7,7 +7,7 @@ burgerBtn.classList.remove("burger-btn--no-js");
 if (window.matchMedia("(max-width: 767px)").matches) {
   mainNav.classList.add("main-nav--close");
 } else {
-    mainNav.classList.remove("main-nav--close")
+  mainNav.classList.remove("main-nav--close")
 }
 
 burgerBtn.addEventListener("click", function (evt) {
@@ -16,4 +16,3 @@ burgerBtn.addEventListener("click", function (evt) {
   burgerBtn.classList.toggle("burger-btn--cross");
   mainNav.classList.toggle("show-menu");
 })
-
